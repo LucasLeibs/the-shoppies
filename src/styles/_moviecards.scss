@@ -1,0 +1,64 @@
+$primary: #320011;
+$secondary: #ffd374;
+$primary2:rgb(14, 3, 7);
+
+.movie-container {
+    display: flex;
+    width: 80vw;
+    margin-right: -20%;
+  align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+   background: $primary;
+    margin-top: 10vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+ 
+    color: white;
+
+    margin-bottom: 100px;
+    width: 30%;
+    border-radius: 5px;
+}
+
+.movie-info {
+    color: $primary;
+    text-align: center;
+    padding-bottom: 10px;
+    text-overflow: scroll;
+    width: 100%;
+    font-weight: bold;
+    background-color:white;
+
+}
+
+.movie-poster {
+    height: 500px;
+   
+}
+
+.nominate-button {
+    background-color: $secondary;
+    height: 50px;
+    border: none;
+    color: $primary;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    
+    font-size: 1rem;
+}
+.disabled-button {
+    background-color: grey;
+    height: 50px;
+    border: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    
+    font-size: 1rem;
+}
