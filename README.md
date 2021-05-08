@@ -10,7 +10,7 @@
 - Logo designed with Adobe Illustrator
 ## Deployment
 - Deployed on AWS Amplify
-- Live link: 
+- Live link: https://master.doh7bp340reog.amplifyapp.com/
 ## Features
 - Users can:
  Query IMDB database from search bar
