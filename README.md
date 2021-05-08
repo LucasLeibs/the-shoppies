@@ -3,7 +3,7 @@
 ## Tools
 - Built with React
 - Movie list populated from the OMDB API
-- Responive layout with media queries
+- Responsive layout with media queries
 - Sass for styling to emmulate a more production style codebase
 - Custom CSS badge notifications for nomination count
 - React-toast-notifications for error handling on nomination limit
