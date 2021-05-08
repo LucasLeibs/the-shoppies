@@ -26,7 +26,7 @@ export default class MovieContainer extends Component {
       fetchMovies = (query) => {
         
         fetch(
-          `http://www.omdbapi.com/?s=${query}&type=movie&page=1&apikey=a5bbe8e0`
+          `https://www.omdbapi.com/?s=${query}&type=movie&page=1&apikey=a5bbe8e0`
         )
           .then((res) => res.json())
           .then((data) => {
