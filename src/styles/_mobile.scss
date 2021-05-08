@@ -58,3 +58,95 @@
         margin: 10px;
     }
 }
+
+
+@media(max-width: 700px) {
+    .container {
+        background: $primary;
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        .description {
+            color: $secondary;
+            font-weight: bold;
+        }
+    }
+    .movie-container {
+        display: flex;
+        width: 100%;
+      
+      align-items: center;
+        flex-direction: column;
+       
+    
+        
+       background: $primary;
+        margin-top: 10vh;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+     
+        color: white;
+    
+        margin-bottom: 100px;
+        width: 100%;
+        border-radius: 5px;
+    }
+  
+        .badge-wrapper {
+            position: absolute;
+            top: 4%;
+            left: 3%;
+            text-align: center;
+    }
+    .nomination-button {
+        background-color: $secondary;
+       
+      
+        border: none;
+        color: $primary;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 5px;
+        font-size: 0.6rem;
+      
+    }
+    .badge {
+        border-radius: 50%;
+        background: white;
+       padding: 0px;
+        display: inline-block;
+    min-width: 25px;
+    
+    position: absolute;
+    top: -65%;
+    left: 87%;
+    font-weight: bold;
+    color: $primary;
+    
+    }
+    .description {
+        text-align: center;
+        margin: 10px;
+    }
+    input {
+        border: none;
+        width: 85%;
+        margin-top: 15px;
+        height: 40px;
+        border-radius: 5rem;
+        font-weight: bold;
+        padding-left: 20px;
+        font-size: 1rem;
+        &:focus {
+            border: 2px solid $secondary;
+            outline: none;
+            padding-left: 20px;
+        }
+       
+    }
+}
