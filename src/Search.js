@@ -11,6 +11,7 @@ export default function Search(props) {
   };
     return (
         <form onSubmit={handleSearch} className="search-bar">
+       
             <input placeholder="Search Movies" type="text" ref={query}></input>
          </form>
     )

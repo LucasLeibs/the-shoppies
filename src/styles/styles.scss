@@ -1,4 +1,5 @@
 @import "moviecards";
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 $primary: #320011;
@@ -52,7 +53,34 @@ input {
     font-family: 'Poppins', sans-serif;
     border-radius: 5px;
     font-size: 1rem;
+  
+}
+
+.badge {
+    border-radius: 50%;
+    background: white;
+    padding: 5px;
+    display: inline-block;
+min-width: 25px;
+
+position: absolute;
+top: -40%;
+left: 87%;
+font-weight: bold;
+color: $primary;
+
+}
+
+.badge-wrapper {
     position: absolute;
     top: 5%;
-    left: 90%;
+    left: 87%;
+    text-align: center;
+    
 }
+
+.no-results {
+    color: $secondary
+}
+
+@import "_mobile";

@@ -7,7 +7,7 @@ export default function Nominations(props) {
     }
     return (
         <div>
-            <Link to="/"><button className="nomination-button">Back to Search</button></Link>
+            <div className="badge-wrapper"><Link to="/"><button className="nomination-button">Back to Search</button></Link></div>
              {props.nominations ? (
            
            <div className="movie-container">

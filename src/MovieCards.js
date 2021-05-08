@@ -1,21 +1,29 @@
 import React, {useState} from 'react'
-
+import { ToastProvider, useToasts } from 'react-toast-notifications';
+import {Link} from 'react-router-dom'
 export default function MovieCards(props) {
     const [nominations, setNomination] = useState([]);
+    const { addToast } = useToasts();
 
     const addNomination = (movie) => {
+      props.nominations.length === 5 ? addToast("Can only nominate 5 movies total", {appearance: 'warning'}) :
         props.addNom(movie)
         
     }
     console.log(nominations)
+   const movies = props.movies ? props.movies.slice(0,9) : props.movies
     return (
         <div>
-          
+          <ToastProvider>
+          <div className="badge-wrapper">
+            <Link to="/nominations"><button className="nomination-button">Nominations </button> </Link>
+              <span className="badge">{props.nominations.length}</span>
+              </div>
             {props.movies ? (
            
           <div className="movie-container">
            
-            {props.movies.map((movie) => (
+            {movies.map((movie) => (
        
                   <div className="card">
                     {props.nominations.includes(movie) ? (
@@ -48,6 +56,7 @@ export default function MovieCards(props) {
             <h2>No results </h2>
           </div>
         )}
+        </ToastProvider>
         </div>
     )
 }

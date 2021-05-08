@@ -4,6 +4,7 @@ import MovieCards from './MovieCards'
 import './styles/styles.scss'
 import logo from './shoppies.png'
 import Nominations from './Nominations'
+import { ToastProvider, useToasts } from 'react-toast-notifications';
 import {
   BrowserRouter as Router,
   Switch,
@@ -20,6 +21,7 @@ export default class MovieContainer extends Component {
        nominations: [],
      
       };
+      
     
       fetchMovies = (query) => {
         
@@ -29,7 +31,7 @@ export default class MovieContainer extends Component {
           .then((res) => res.json())
           .then((data) => {
             this.setState({
-              movies: data.Search.slice(0,9),
+              movies: data.Search,
               progress: 0, 
               startIndex: 0
             });
@@ -52,22 +54,28 @@ deleteNom = (movie) => {
  
         return (
           <Router>
+        
             <div className="container">
               <img className="logo" src={logo}></img>
-
-              <Link to="/nominations"><button className="nomination-button">Nominations</button></Link>
+              
+            
+              
+              
         
               <p className="description">Search your favorite movies and nominate them for The 2021 Shoppies Awards</p>
                 <Switch>
                 <Route exact path="/">
-                <Search fetchMovies={this.fetchMovies}/>
+                <Search nominations={this.state.nominations} fetchMovies={this.fetchMovies}/>
+                <ToastProvider>
                 <MovieCards addNom={this.addNom} nominations={this.state.nominations} movies={this.state.movies} />
+                </ToastProvider>
                 </Route>
                 <Route exact path='/nominations'>
                 <Nominations deleteNom={this.deleteNom} nominations={this.state.nominations}></Nominations>
                 </Route>
                 </Switch>
             </div>
+            
             </Router>
         )
     }

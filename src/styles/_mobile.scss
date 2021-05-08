@@ -1,0 +1,60 @@
+@media(max-width: 1000px) {
+    .movie-container {
+        display: flex;
+        width: 80vw;
+        margin-right: -20%;
+      align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+        
+       background: $primary;
+        margin-top: 10vh;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+     
+        color: white;
+    
+        margin-bottom: 100px;
+        width: 80%;
+        border-radius: 5px;
+    }
+  
+        .badge-wrapper {
+            position: absolute;
+            top: 5%;
+            left: 70%;
+            text-align: center;
+    }
+    .nomination-button {
+        background-color: $secondary;
+        height: 30px;
+        border: none;
+        color: $primary;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 5px;
+        font-size: 1rem;
+      
+    }
+    .badge {
+        border-radius: 50%;
+        background: white;
+       padding: 0px;
+        display: inline-block;
+    min-width: 25px;
+    
+    position: absolute;
+    top: -65%;
+    left: 87%;
+    font-weight: bold;
+    color: $primary;
+    
+    }
+    .description {
+        text-align: center;
+        margin: 10px;
+    }
+}
