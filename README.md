@@ -13,9 +13,9 @@
 - Live link: https://master.doh7bp340reog.amplifyapp.com/
 ## Features
 - Users can:
- Query IMDB database from search bar
- Add movies to nomination list
- Delete movies from nomination list
+ - Query IMDB database from search bar
+ - Add movies to nomination list
+ - Delete movies from nomination list
  
 
 
