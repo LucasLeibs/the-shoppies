@@ -1,5 +1,6 @@
 # Getting Started with Create React App
 ## The Shoppies - Lucas Leiberman 
+<img src="src/shoppies.png"></img>
 ## Tools
 - Built with React
 - Movie list populated from the OMDB API
